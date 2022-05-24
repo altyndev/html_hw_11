@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>peaksoft</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: palevioletred;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text{
+            color: purple;
+            text-align: center;
+            /*border: 1px solid red;*/
+            width: 100%;
+        }
+
+        label {
+            color: purple;
+            display: inline-block;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            border-radius: 40px;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0 50px;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+        .form__btn{
+            border: 1px solid pink;
+            padding: 10px 40px;
+            color: yellowgreen;
+            background-color: palevioletred;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .form__forgot{
+            text-align: center;
+            width: 100%;
+            color: palevioletred;
+            text-decoration: none;
+        }
+
+        .fromContent {
+            margin: 50px auto;
+            text-align: center;
+            padding: 5px;
+        }
+
+        input {
+            /*display: block;*/
+            padding: 5px 10px;
+            font-family: cursive;
+            outline: none;
+            border-radius: 40px;
+            border-color: pink;
+            width: calc(1 / 1 * 100%);
+            margin-bottom: 20px;
+        }
+
+        input:focus{
+            /*border-radius: 1px  ;*/
+        }
+
+        input:hover{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="fromContent">
+
+        <form>
+            <h1 class="text">Login Page</h1>
+            <label for="username"></label>
+            <input id="username" placeholder="User name" type="text"/>
+
+            <label for="password"></label>
+            <input id="password" placeholder="Password" type="password">
+            <button class="form__btn">Login</button>
+            <a href="#" class="form__forgot">Forgot password ?</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
